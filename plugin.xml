@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-plugin-blackbee"
+        version="0.0.1">
+
+    <name>BlackBee</name>
+
+    <description>This plugin for Cordova and PhoneGap allows you to get some data to the user device and send it to a server.</description>
+
+    <keywords>Cordova,PhoneGap,plugin,app,geolocation,iOS,Android,ecosystem:cordova,cordova-ios,cordova-android</keywords>
+
+    <repo>https://github.com/gabicuesta/BlackBee.git</repo>
+    <issue>https://github.com/gabicuesta/BlackBee/issues</issue>
+
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/BlackBee.js" name="BlackBee">
+        <clobbers target="blackBee" />
+    </js-module>
+
+    <!-- iOS -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="BlackBee">
+                <param name="ios-package" value="BlackBee" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/BlackBee.h" />
+        <source-file src="src/ios/BlackBee.m" />
+    </platform>
+
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BlackBee">
+                <param name="android-package" value="com.gabrielcuesta.blackbee" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/BlackBee.java" target-dir="src/com/gabicuesta/blackbee/" />
+    </platform>
+
+</plugin>

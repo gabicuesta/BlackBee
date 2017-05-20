@@ -1,0 +1,40 @@
+{
+  "name": "cordova-plugin-blackbee",
+  "version": "0.4.2",
+  "description": "This plugin for Cordova and PhoneGap allows you to get some data to the user device and send it to a server.",
+  "cordova": {
+    "id": "cordova-plugin-blackbee",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabicuesta/BlackBee.git"
+  },
+  "keywords": [
+    "Cordova",
+    "PhoneGap",
+    "plugin",
+    "app",
+    "geolocation",
+    "iOS",
+    "Android",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "gabicuesta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gabicuesta/AppAvailability/issues"
+  },
+  "homepage": "https://github.com/gabicuesta/AppAvailability#readme"
+}
