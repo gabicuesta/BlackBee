@@ -23,4 +23,14 @@
 
 }
 
+- (void)getLanguage:(CDVInvokedUrlCommand*)command {
+    
+    CDVPluginResult* pluginResult = nil;
+    
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"ES"];
+    
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    
+}
+
 @end

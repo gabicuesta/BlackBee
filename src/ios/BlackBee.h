@@ -4,5 +4,6 @@
 
 - (void)getVersionNumber:(CDVInvokedUrlCommand*)command;
 - (void)getSO:(CDVInvokedUrlCommand*)command;
+- (void)getLanguage:(CDVInvokedUrlCommand*)command;
 
 @end

@@ -16,6 +16,15 @@ var blackBee = {
             "BlackBee",
             "getSO"
         );
+    },
+
+    getLanguage: function(successCallback, errorCallback) {
+        cordova.exec(
+            successCallback,
+            errorCallback,
+            "BlackBee",
+            "getLanguage"
+        );
     }
 
 };
